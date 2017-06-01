@@ -1,0 +1,58 @@
+# **Finding Lane Lines on the Road** 
+
+## By Marwan ZOUINKHI 06/01/2017
+
+
+---
+
+**Finding Lane Lines on the Road**
+
+The goals / steps of this project are the following:
+* Make a pipeline that finds lane lines on the road
+* Reflect on your work in a written report
+
+
+[image7]: ./examples/weighted.jpg "Final Image"
+
+---
+
+### Reflection
+
+### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+
+My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I applyed a Gaussian blur to the image to avoid the unnecessary objects. The third step was applying Canny edge detection to detect the limits of objects.
+After that, i maked a region regression to specify the the region of interest in processing.
+Just after, i runned the Hough transform to identify lines and i converted them into straight lines. 
+Also, I smoothed the result with a moving average filter. and lastly i plotted the lines on top of the image
+
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by applying an algorithm who aim to create continuous right and left lines following this steps:
+For the one thing, Find max and min slope. secondly, use them to Classify the view into two part. one for the right line and other for the left. Third, Find the lowest y for the right and the left, Sum slope and intercept to get the average
+ Use the data to calculate x1 and y1 and the average slope and intercept for right and left
+   and finally, Draw extrapolated line
+
+If you'd like to include images to show how the pipeline works, here is how to include an image: 
+
+[image1]: ./examples/firstImage.jpg "Input Image"
+[image2]: ./examples/grayImage.jpg "Grayscale"
+[image3]: ./examples/blurImage.jpg "Blur Image"
+[image4]: ./examples/edgesImage.jpg "Canny Edge detection"
+[image5]: ./examples/masked_image.jpg "Region Mask"
+[image6]: ./examples/line_img.jpg "Hough transform"
+[image7]: ./examples/weighted.jpg "Plotted Image"
+
+
+
+
+### 2. Identify potential shortcomings with your current pipeline
+
+
+One potential shortcoming would be cleaner code and avoid tweaking 
+
+Another shortcoming could be when changind the statics values by dynamics
+
+
+### 3. Suggest possible improvements to your pipeline
+
+A possible improvement would be to adabte the effects to avoid to light and contrast change bit more 
+
+Another potential improvement could be including machine learning to our algorithm
