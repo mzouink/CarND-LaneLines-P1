@@ -36,9 +36,9 @@ If you'd like to include images to show how the pipeline works, here is how to i
 <img src="examples/grayImage.jpg" width="480" alt="Grayscale Image" />
 <img src="examples/blurImage.jpg" width="480" alt="Blur Image" />
 <img src="examples/edgesImage.jpg" width="480" alt="Canny Edge detection" />
-<img src="examples/masked_image.jpg" width="480" alt="Region Mask" />
-<img src="examples/line_img.jpg" width="480" alt="Hough transform" />
-<img src="examples/weighted.jpg" width="480" alt="Plotted Image" />
+<img src="examples/maskedImage.jpg" width="480" alt="Region Mask" />
+<img src="examples/lineImage.jpg" width="480" alt="Hough transform" />
+<img src="examples/weightedImage.jpg" width="480" alt="Plotted Image" />
 
 ### 2. Identify potential shortcomings with your current pipeline
 
