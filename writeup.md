@@ -32,13 +32,13 @@ For the one thing, Find max and min slope. secondly, use them to Classify the vi
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-[image1]: ./examples/firstImage.jpg "Input Image"
-[image2]: ./examples/grayImage.jpg "Grayscale"
-[image3]: ./examples/blurImage.jpg "Blur Image"
-[image4]: ./examples/edgesImage.jpg "Canny Edge detection"
-[image5]: ./examples/masked_image.jpg "Region Mask"
-[image6]: ./examples/line_img.jpg "Hough transform"
-[image7]: ./examples/weighted.jpg "Plotted Image"
+[image1]: examples/firstImage.jpg "Input Image"
+[image2]: examples/grayImage.jpg "Grayscale"
+[image3]: examples/blurImage.jpg "Blur Image"
+[image4]: examples/edgesImage.jpg "Canny Edge detection"
+[image5]: examples/masked_image.jpg "Region Mask"
+[image6]: examples/line_img.jpg "Hough transform"
+[image7]: examples/weighted.jpg "Plotted Image"
 
 
 
