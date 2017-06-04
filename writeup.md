@@ -26,7 +26,7 @@ Just after, i runned the Hough transform to identify lines and i converted them 
 Also, I smoothed the result with a moving average filter. and lastly i plotted the lines on top of the image
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by applying an algorithm who aim to create continuous right and left lines following this steps:
-For the one thing, classify lines in right and left by slope. secondly, looking for extreme points y for each right and left lines to get the max and min points. Third, concatinate them to get the full two lines
+For the one thing, classify lines in two listes, right one and left one, by slope. secondly, for each line calculate current slope and intercept. after finishing etirate lines listes, calculate the global slope and intercept and get the values of x for extremes y. after, concatinate them to get the full two lines
 and finally, Draw extrapolated line
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
